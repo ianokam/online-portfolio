@@ -34,7 +34,7 @@ body {
         z-index: -1;
         padding: 30px 10px 0px 10px;
         background-color:#ffffff;  
-        width:25%;
+        width:2%; /* width:25%; */
         font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         border-radius: 10px 0px 0px 0px;
@@ -51,7 +51,11 @@ body {
 #bodyColumn2 {
         position: static;
         z-index: 0;
-        width:75%;
+        width:98%;/* width:75%; */
+        border-width: 0px 0px 0px 5px;
+        border-style: solid;
+        border-color: #c9c7c7;
+        box-shadow: 1px 0px 5px #c7c7c7 inset;
         padding: 0px 20px 0px 20px;
         background-color:#e0e3e4;    
         border-radius: 0px 10px 0px 0px;
@@ -147,7 +151,7 @@ body {
         position: static;
         z-index: 0;
         width:25%;
-        padding: 0px 20px 0px 20px;
+        padding: 8px 10px 0px 20px;
         background-color:#098f41;
         box-shadow: 0px -10px 70px #06632d inset;
     }
@@ -445,30 +449,6 @@ border-radius: 10px;
 
 }
 
-/* EXTERNAL LINKS */
-@media only screen and (max-width: 1206px) {
-
-    #bodyColumn2b {
-        font-family:'futura';
-        color: #ffffff;
-        font-size: 1.0em;
-        position: static;
-        z-index: 0;
-        width:25%;
-        padding: 0px 50px 20px 30px;
-        text-align: center;
-        background-color:#098f41;
-        box-shadow: 0px -10px 70px #06632d inset;
-    }
-    #bodyColumn2 .extPortfolioLinks{        
-        width: 40%;
-        margin: 10px;
-        border-radius: 10px;
-        }
-}
-
-
-
 /* BODY */
 @media only screen and (max-width: 982px) {
     
@@ -498,8 +478,6 @@ border-radius: 10px;
         top:10%;
 
         border: 3px solid #012f3e;
- 
-
     }
 
     #bodyColumn2 {
@@ -510,6 +488,11 @@ border-radius: 10px;
             background-color:#e0e3e4;    
             border-radius: 0px;
             margin: auto;
+
+            border-width: 5px 0px 0px 0px;
+            border-style: solid;
+            border-color: #c9c7c7;
+            box-shadow: 0px 1px 5px #c7c7c7 inset;
 
             display: -webkit-flex; /* Safari */
             -webkit-flex-direction:column; /* Safari 6.1+ */
