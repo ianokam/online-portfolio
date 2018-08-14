@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ONLINE PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Stylesheets/mainstyle.css" />
+
+    <!-- ///      CODING TAB:  STYLESHEETS & JAVASCRIPT   ///  -->
+    <link rel="stylesheet" href="Stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="Stylesheets/accordionBoxColorStyle.css">
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+</head>
+<!-- //////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////// -->
+<body>
+    <!-- /////////////////// [ HEAD ] ///////////////////////// -->
+
+    <!-- /////////////////// [ BODY ] ///////////////////////// -->
+    <div id="body">
+            <img src="Images/background_gw.jpg" alt="" id="background">
+        <div id="bodyColumn1">
+            <img src="Images/profile_pic_medium300_f_bright.jpg" alt="My picture: thumbnail">
+        </div>
+
+        <div id="bodyColumn2">
+
+            <div id="bodyColumn2a">
+                    
+                    <p id="header1">BRYANT ANOKAM</p>
+                    <p id="header2">ELECTRICAL ENGINEER</p>
+                    <p id="headerContent">     Hello, I am a Howard University graduate with a Bachelor of Science degree in Electrical Engineering. 
+                            As an engineer I pride myself on being a passionate, patient, and adaptive individual who is always 
+                            willing to learn more. I’m always ready for a challenge where I can thoroughly break down complex 
+                            problems and ideas with detailed step-by-step precision, readily delivering concrete constructive 
+                            feed- back, improving the analysis of a problem, and efficiently putting my analysis to work to provide 
+                            the most effective resolution to the problem.
+                    </p>
+            </div>
+
+            <div id="bodyColumn2b">
+                    <p id="header">EXTERNAL ACCOUNTS</p>
+                        <p class="extLinksFonts">
+                            <a href="https://github.com/ianokam/ianokam.github.io"><img src="Images/git_link.png"   alt="Github" class="extPortfolioLinks"></a>
+                            - GitHub
+                        </p>
+                        <p class="extLinksFonts">
+                            <a href="https://www.instagram.com/bryant.artiste/"><img src="Images/insta_link.png" alt="art" class="extPortfolioLinks"></a>
+                            - Illustrations
+                        </p>
+                        <p class="extLinksFonts">
+                            <a href="https://www.instagram.com/bryant.lensman/"><img src="Images/insta_link.png" alt="photography" class="extPortfolioLinks"></a>
+                            - Photogrpahy
+                        </p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- /////////////////// [ DIVIDER ] ///////////////////////// -->
+    <div id="greenBar"></div>
+    <div id="greyBar"></div>
+    
+    <!-- /////////////////// [   TABS / DROPDOWN MENU  ] ///////////////////////// -->
+
+        <div id="tabs">
+            <ul>
+                <li class="activeTab"   id="codeTab"            onclick="openCode()">CODING</li>
+                <li class="unactiveTab" id="photoTab"           onclick="openPhoto()">PHOTOGRAPHY</li>
+                <li class="unactiveTab" id="illustrationTab"    onclick="openIllustration()">ILLUSTRATIONS</li>
+                <li class="unactiveTab" id="mathWebsiteTab"     onclick="openMathWebsite()">MATH WEBSITE</li>
+            </ul>
+        </div>
+
+        <div id="dropDown">
+                <div class="pos-f-t"></div>
+                    <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                                        <p class="activeTab"   id="codeTab2"            onclick="openCode()">CODING</p>
+                                        <p class="unactiveTab" id="photoTab2"           onclick="openPhoto()">PHOTOGRAPHY</p>
+                                        <p class="unactiveTab" id="illustrationTab2"    onclick="openIllustration()">ILLUSTRATIONS</p>
+                                        <p class="unactiveTab" id="mathWebsiteTab2"     onclick="openMathWebsite()">MATH WEBSITE</p>
+                    </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <ul>
+                        <li id="dropDownTabName">CODING</li>
+                    </ul>
+                    </nav>
+                </div>
+        </div>
+
+<!-- /////////////////// [ TABS CONTENT ] ////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////  -->
+<div id="tabContent">
+
+    <!-- /////////////////// [ CODING:: BEGIN ] ///////////////////////// -->
+    <div id="coding">
+
+        <div id="bodyColumn">
+
+
+
+
+            <!-- [BOOTSTRAP] -->
+            <div class="container">
+                <p class="paragraphGreen">CODING PORTFOLIO</p>
+                <h5 id="tableComment"> <br ><br > * SOME TABLES REQUIRE SCROLLING LEFT AND RIGHT TO BE SEEN</h5>
+                <div class="panel-group" id="accordion">
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                MULTI-ULTRASONIC SENSOR SYSTEM - SERIAL COMMUNICATION 
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                                <h3>SCENARIO</h3><br >
+                                <span>
+                                With its priceless modern art pieces the Musée d'Orsay Museum in Paris, 
+                                France ranks high as a must-go-see venue in the city. The museum has a perimeter 
+                                intrusion detection system comprised of high-grade ultrasonic sensor devices to 
+                                protect the exhibits in the museum. Each exhibit is fixed with a multitude of 
+                                ultrasonic sensors connected to a sensing device, which sense the distance of 
+                                visitors in proximity to the exhibits. Each sensing device is connected together 
+                                in series by a one-to-many UART hardware connection design. When the ‘Slave’ 
+                                devices ultrasonic sensors are tripped an alarm is set off alerting visitors to 
+                                back away from the exhibit. As the zone of protection is compromised a signal is 
+                                relayed to the ‘master’ device hidden away in a control room. This ‘master’ device 
+                                acts as a switch aggregating data from the ‘slave’ devices setting off the cameras 
+                                in the vicinity of the affected zone when the alarm is left unchecked for too long.
+                                </span>
+                                <br ><br>
+                                <h3>COMPONENTS</h3><br >
+
+                                <!-- TABLE 1-->
+                                <table> 
+                                        <tr>
+                                        <th>MICROCONTROLLER</th>
+                                        </tr> 
+
+                                        <tr>
+                                        <td colspan="1">TEXAS INSTRUMENTS’ MSP432P401R LAUNCHPAD </td>
+                                        </tr> 
+                                </table>
+                                <!-- TABLE 2-->
+                                <table> 
+                                        <tr>
+                                        <th>COMPILER</th> <th>LANGUAGE</th>
+                                        </tr> 
+
+                                        <tr>
+                                        <td>ENERGIA v1.6.10E18</td> <td>C/C++ BASED</td>
+                                        </tr> 
+                                </table>
+                                <!-- TABLE 3-->
+                                <table class="longTable"> 
+                                        <tr>
+                                        <th>ELEMENT / COMPONENT / SENSOR</th> <th>FUNCTION</th> <th>SCHEMATIC</th> <th>CONNECTION  METHOD / PROTOCOL</th>
+                                        </tr> 
+
+                                        <tr>
+                                            <td>MICRO-USB CABLE</td> 
+                                            <td>UNIVERSAL SERIAL BUS: 
+                                                USED TO CONNECT MICROCONTROLLER TO A SOURCE OF POWER (i.e. PC) & TO PASS I/O DATA THROUGH IT
+                                            </td>
+                                            </td>
+                                            <td><img src="Images/code/microUsb.png" alt="MICRO-USB CABLE" class="tableImage"></td>
+                                            <td>SERIAL PORT CONNECTION</td>
+                                        </tr> 
+
+                                        <tr>
+                                                <td>ULTRASONIC SENSOR - HC-SR04</td> 
+                                                <td>ULTRASONIC TRANSDUCER:
+                                                    A TRANSCEIVER THAT TRANSMITS AN ULTRASOUND SIGNAL AND THEN RECEIVES BACK 
+                                                    THE SIGNAL CONVERTING IT INTO AN ELECTRICAL SIGNAL. BY MEASURING THE TIME 
+                                                    BY WHICH IT TAKES TO SEND AND RECEIVE A SIGNAL THE DISTANCE OF AN OBJECT CAN BE MEASURED.   
+                                                </td>
+                                                <td><img src="Images/code/ultrasonicSensor.png" alt="ULTRASONIC SENSOR - HC-SR04" class="tableImage"></td>
+                                                <td>PIN HEADER CONNECTION BY 
+                                                        4-PIN “BERGE CONNECTOR”
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>3 PIN FEMALE/MALE 'EXTENSION' JUMPER WIRES </td> 
+                                                <td>COMPONENT CONNECTOR
+                                                </td>
+                                                <td><img src="Images/code/3pinFemaleMaleJumpers.png" alt="3 PIN FEMALE/MALE 'EXTENSION' JUMPER WIRES" class="tableImage"></td>
+                                                <td>PIN HEADER CONNECTION</td>
+                                        </tr>  
+                                </table>
+
+                                <br ><br>
+                                <h3>COMPONENT SPECS</h3><br >
+
+                                <!-- TABLE 1-->
+                                <table class="compSpecs"> 
+                                        <tr>
+                                        <th>ULTRASONIC SENSOR - HC-SR04</th> <th>MINIMUM</th> <th>TYPICAL</th> <th>MAX</th> <th>UNIT</th>
+                                        </tr> 
+
+                                        <tr>
+                                            <th>SUPPLY VOLTAGE (VCC)</th> 
+                                            <td> - </td>
+                                            <td>5.00</td>
+                                            <td> - </td>
+                                            <td>VDC</td>
+                                        </tr> 
+
+                                        <tr>
+                                                <th>SUPPLY CURRENT (ICC)</th> 
+                                                <td> - </td>
+                                                <td>15.00</td>
+                                                <td> - </td>
+                                                <td>mA</td>
+                                        </tr> 
+
+                                        <tr>
+                                                <th>WORKING FREQUENCY</th> 
+                                                <td colspan="3"> 40 </td>
+                                                <td>HZ</td>
+                                        </tr> 
+
+                                        <tr>
+                                                <th>DETECTING DISTANCE</th> 
+                                                <td> 2 </td>
+                                                <td>~</td>
+                                                <td>400</td>
+                                                <td>cm</td>
+                                        </tr> 
+                                
+                                        <tr>
+                                                <th>MEASURING ANGLE</th> 
+                                                <td colspan="3"> 15 </td>
+                                                <td>degrees</td>
+                                        </tr> 
+    
+                                        <tr>
+                                                <th>RANGING ACCURACY</th> 
+                                                <td colspan="3"> 3 </td>
+                                                <td>mm</td>
+                                        </tr> 
+    
+                                        <tr>
+                                                <th>TRIGGER INPUT SIGNAL</th> 
+                                                <td colspan="3"> 10 </td>
+                                                <td>μs (TTL Pulse)</td>
+                                        </tr> 
+    
+                                        <tr>
+                                                <th>ECHO OUTPUT SIGNAL</th> 
+                                                <td colspan="3">Input TTL lever signal and the range in proportion</td>
+                                                <td> - </td>
+                                        </tr> 
+                                </table>
+
+
+                                <br ><br>
+                                <h3>SCHEMATIC DIAGRAM</h3><br >
+
+                                <div id="indentedCode">
+                                <img src="Images/code/MSP432_lab1.png" alt="microcontroller pin connection picture" class="centerImage imageSet1">
+                                </div>
+
+                                <br ><br>
+                                <h3>CODE</h3><br >
+
+                                <img src="Images/code/code01.png" alt="picture of code #1" class="centerImage imageSet1">
+                                <br >
+                                <img src="Images/code/code02.png" alt="picture of code #2" class="centerImage imageSet1">
+                                <br >
+                                <img src="Images/code/code03.png" alt="picture of code #3" class="centerImage imageSet1">
+                                
+                                <br ><br >
+                                <span>
+                                As the MSP432 runs the ultrasonic sensor begins to check if any object is in range of 
+                                its sensors. Once an object is 2 to 400 centimeters in range of the sensor it begins 
+                                to measure the distance of the object in units of centimeters. Each MSP432 board 
+                                transmits the distance of their corresponding ultrasonic sensor to the adjacent board, 
+                                which then receives and outputs that given distance onto its serial monitor.
+                                </span>
+
+                                <div id="closer">
+                                       <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                CLOSE
+                                            </a>
+                                          </h4>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                ULTRASONIC SONAR RADIO COMMUNICATION
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                      <h3>SCENARIO</h3><br >
+                                      <span>
+                                            The 2017 Toyota Prius Gx has a mode that shows the backup and 
+                                            front-side cameras view on the navigation screen when parking. 
+                                            When these views are on the navigation screen the driver has the 
+                                            ability to set the screen to only show what is being viewed on 
+                                            the cameras or to superimpose colored onscreen guide lines onto 
+                                            the cameras displayed image to assist in parking.  In the latter 
+                                            mode the distance values of objects in front and behind the car 
+                                            can be displayed when the driver presses down a button on the steering 
+                                            wheel in which the distance sensors on the outside of the car transmits 
+                                            its data to the navigation screen. The distance is displayed for 15 
+                                            seconds until the driver presses the button again. 
+                                      </span>
+                                      <br ><br>
+                                      <h3>COMPONENTS</h3><br >
+      
+                                      <!-- TABLE 1-->
+                                      <table> 
+                                              <tr>
+                                              <th>MICROCONTROLLER</th>
+                                              </tr> 
+      
+                                              <tr>
+                                              <td colspan="1">TEXAS INSTRUMENTS’ MSP432P401R LAUNCHPAD </td>
+                                              </tr> 
+                                      </table>
+                                      <!-- TABLE 2-->
+                                      <table> 
+                                              <tr>
+                                              <th>COMPILER</th> <th>LANGUAGE</th>
+                                              </tr> 
+      
+                                              <tr>
+                                              <td>ENERGIA v1.6.10E18</td> <td>C/C++ BASED</td>
+                                              </tr> 
+                                      </table>
+                                      <!-- TABLE 3-->
+                                      <table class="longTable"> 
+                                              <tr>
+                                              <th>ELEMENT / COMPONENT / SENSOR</th> <th>FUNCTION</th> <th>SCHEMATIC</th> <th>CONNECTION  METHOD / PROTOCOL</th>
+                                              </tr> 
+      
+                                              <tr>
+                                                  <td>MICRO-USB CABLE</td> 
+                                                  <td>UNIVERSAL SERIAL BUS: 
+                                                      USED TO CONNECT MICROCONTROLLER TO A SOURCE OF POWER (i.e. PC) & TO PASS I/O DATA THROUGH IT
+                                                  </td>
+                                                  <td><img src="Images/code/microUsb.png" alt="MICRO-USB CABLE" class="tableImage"></td>
+                                                  <td>SERIAL PORT CONNECTION</td>
+                                              </tr> 
+      
+                                              <tr>
+                                                      <td>ULTRASONIC SENSOR - HC-SR04</td> 
+                                                      <td>ULTRASONIC TRANSDUCER:
+                                                          A TRANSCEIVER THAT TRANSMITS AN ULTRASOUND SIGNAL AND THEN RECEIVES BACK 
+                                                          THE SIGNAL CONVERTING IT INTO AN ELECTRICAL SIGNAL. BY MEASURING THE TIME 
+                                                          BY WHICH IT TAKES TO SEND AND RECEIVE A SIGNAL THE DISTANCE OF AN OBJECT CAN BE MEASURED.   
+                                                      </td>
+                                                      <td><img src="Images/code/ultrasonicSensor.png" alt="ULTRASONIC SENSOR - HC-SR04" class="tableImage"></td>
+                                                      <td>PIN HEADER CONNECTION BY 
+                                                              4-PIN “BERGE CONNECTOR”
+                                                      </td>
+                                              </tr>
+
+                                              <tr>
+                                                    <td>NRF2401+ 2.4GHZ WIRELESS RF TRANSCEIVER MODULE</td> 
+                                                    <td>WIRELESS RF (RADIO FREQUENCY) TRANSCEIVER MODULE: TRANSMITS 
+                                                        AND RECEIVES RADIO SIGNALS BETWEEN TWO DEVICES OPERATING ON 
+                                                        THE 2.4GHZ ISM BAND 
+                                                    </td>
+                                                    <td><img src="Images/code/NRF2401_plus_2_4Ghz .png" alt="NRF2401+ 2.4GHZ WIRELESS RF TRANSCEIVER MODULE" class="tableImage"></td>
+                                                    <td>SERIAL PERIPHERAL INTERFACE BUS (SPI) PIN HEADER CONNECTION
+                                                    </td>
+                                            </tr>
+                                            
+                                              <tr>
+                                                      <td>3 PIN FEMALE/MALE 'EXTENSION' JUMPER WIRES </td> 
+                                                      <td>COMPONENT CONNECTOR
+                                                      </td>
+                                                      <td><img src="Images/code/3pinFemaleMaleJumpers.png" alt="3 PIN FEMALE/MALE 'EXTENSION' JUMPER WIRES" class="tableImage"></td>
+                                                      <td>PIN HEADER CONNECTION</td>
+                                              </tr>  
+                                      </table>
+      
+                                      <br ><br>
+                                      <h3>COMPONENT SPECS</h3><br >
+      
+                                      <!-- TABLE 1-->
+                                      <table class="compSpecs"> 
+                                              <tr>
+                                              <td>ULTRASONIC SENSOR - HC-SR04</td> <th>MINIMUM</th> <th>TYPICAL</th> <th>MAX</th> <th>UNIT</th>
+                                              </tr> 
+      
+                                              <tr>
+                                                  <th>SUPPLY VOLTAGE (VCC)</th> 
+                                                  <td> - </td>
+                                                  <td>5.00</td>
+                                                  <td> - </td>
+                                                  <td>VDC</td>
+                                              </tr> 
+      
+                                              <tr>
+                                                      <th>SUPPLY CURRENT (ICC)</th> 
+                                                      <td> - </td>
+                                                      <td>15.00</td>
+                                                      <td> - </td>
+                                                      <td>mA</td>
+                                              </tr> 
+      
+                                              <tr>
+                                                      <th>WORKING FREQUENCY</th> 
+                                                      <td colspan="3"> 40 </td>
+                                                      <td>HZ</td>
+                                              </tr> 
+      
+                                              <tr>
+                                                      <th>DETECTING DISTANCE</th> 
+                                                      <td> 2 </td>
+                                                      <td>~</td>
+                                                      <td>400</td>
+                                                      <td>cm</td>
+                                              </tr> 
+                                      
+                                              <tr>
+                                                      <th>MEASURING ANGLE</th> 
+                                                      <td colspan="3"> 15 </td>
+                                                      <td>degrees</td>
+                                              </tr> 
+          
+                                              <tr>
+                                                      <th>RANGING ACCURACY</th> 
+                                                      <td colspan="3"> 3 </td>
+                                                      <td>mm</td>
+                                              </tr> 
+          
+                                              <tr>
+                                                      <th>TRIGGER INPUT SIGNAL</th> 
+                                                      <td colspan="3"> 10 </td>
+                                                      <td>μs (TTL Pulse)</td>
+                                              </tr> 
+          
+                                              <tr>
+                                                      <th>ECHO OUTPUT SIGNAL</th> 
+                                                      <td colspan="3">Input TTL lever signal and the range in proportion</td>
+                                                      <td> - </td>
+                                              </tr> 
+                                      </table>
+      
+      
+                                      <!-- TABLE 2-->
+                                      <table class="compSpecs"> 
+                                            <tr>
+                                            <td>NRF2401+ 2.4GHZ WIRELESS RF TRANSCEIVER MODULE</td> <th>MINIMUM</th> <th>TYPICAL</th> <th>MAX</th> <th>UNIT</th>
+                                            </tr> 
+    
+                                            <tr>
+                                                <th>SUPPLY VOLTAGE (VCC)</th> 
+                                                <td> 1.9 </td>
+                                                <td> ~ </td>
+                                                <td> 3.6 </td>
+                                                <td>VDC</td>
+                                            </tr> 
+    
+                                            <tr>
+                                                    <th>INPUT/OUTPUT PIN WORKING VOLTAGE (ICC) (Vcc=3.3 V)</th> 
+                                                    <td> 3.3 </td>
+                                                    <td> </td>
+                                                    <td> 5.0 </td>
+                                                    <td>VDC</td>
+                                            </tr> 
+    
+                                            <tr>
+                                                    <th>TRANSMISSION RATE</th> 
+                                                    <td colspan="3"> +7 </td>
+                                                    <td>dB</td>
+                                            </tr> 
+
+                                            <tr>
+                                                    <th>RECEIVING SENSITIVITY</th> 
+                                                    <td colspan="3"> ≤-90 </td>
+                                                    <td>dB</td>
+                                            </tr> 
+
+                                            <tr>
+                                                    <th>TRANSMISSION RANGE (CLOSED AREA)</th> 
+                                                    <td> 50 </td>
+                                                    <td>~</td>
+                                                    <td>60</td>
+                                                    <td>m</td>
+                                            </tr> 
+                                    
+                                            <tr>
+                                                    <th>TRANSMISSION RANGE (OPEN AREA)</th> 
+                                                    <td> 50 </td>
+                                                    <td>~</td>
+                                                    <td>100</td>
+                                                    <td>m</td>
+                                            </tr> 
+        
+                                    </table>
+<!-- ///////  -->    
+                                      <br ><br>
+                                      <h3>SCHEMATIC DIAGRAM</h3><br >
+      
+                                      <div id="indentedCode">
+                                      <img src="Images/code/MSP432_lab2.jpg" alt="microcontroller pin connection picture" class="centerImage imageSet2">
+                                      </div>
+      
+                                      <br ><br>
+                                      <h3>CODE</h3><br >
+      
+                                      <img src="Images/code/code04.png" alt="picture of code #1" class="centerImage2 imageSet2">
+                                      <br >
+                                      <img src="Images/code/code05.png" alt="picture of code #2" class="centerImage2 imageSet2">
+                                      <br >
+                                      <img src="Images/code/code06.png" alt="picture of code #3" class="centerImage2 imageSet2">
+                                      <br >
+                                      <img src="Images/code/code07.png" alt="picture of code #1" class="centerImage2 imageSet2">
+                                      <br >
+                                      <img src="Images/code/code08.png" alt="picture of code #2" class="centerImage2 imageSet2">
+                                      <br >
+                                      <img src="Images/code/code09.png" alt="picture of code #3" class="centerImage2 imageSet2">
+                                      
+                                      <br ><br >
+                                      <span>
+                                        As the MSP432 is running the ultrasonic distance sensor begins to check if any 
+                                        object is in range of its sensors. Once an object is 2 to 400 centimeters in 
+                                        range of the sensor it begins to pick up the signal. When one person enters a 
+                                        “T” on their serial monitor and sends it the ultrasonic distance sensors signal 
+                                        from that person’s board is then sent to the serial monitor of any MSP432 board 
+                                        that is in wireless distance of the NRF2401+ 2.4GHz wireless RF transceiver module. 
+                                        Once sent to the other person the module picks up the signal with the distance and 
+                                        displays the measured distance of the object from the other persons MSP432 onto 
+                                        their serial monitor. 
+                                      </span>
+      
+                                      <div id="closer">
+                                             <h4 class="panel-title">
+                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                      CLOSE
+                                                  </a>
+                                                </h4>
+                                      </div>
+                                  </div>
+      
+                              </div>
+                      </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">ARDUINO HOME SECURITY SYSTEM </a>
+                          </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                        <h3>SUMMARY</h3><br >
+                                        <span>
+                                                <ul>
+                                                        <li>Created a PIR motion sensor security system with an 
+                                                        Arduino Uno microcontroller which is triggered when a body 
+                                                        is in range of the detecting area<br ><br ></li>
+                                                </ul>
+                                        </span>
+                                        
+                                        <h3>COMPONENTS</h3><br >
+
+                                        <!-- TABLE 1-->
+                                        <table> 
+                                                <tr>
+                                                <th>MICROCONTROLLER</th>
+                                                </tr> 
+
+                                                <tr>
+                                                <td colspan="1">ARDUINO UNO REV3 A000066</td>
+                                                </tr> 
+                                        </table>
+                                        <!-- TABLE 2-->
+                                        <table> 
+                                                <tr>
+                                                <th>COMPILER</th> <th>LANGUAGE</th>
+                                                </tr> 
+
+                                                <tr>
+                                                <td>ARDUINO v1.6.11</td> <td>C/C++ BASED</td>
+                                                </tr> 
+                                        </table>
+                                        <br ><br>
+                                <h3>SCHEMATIC DIAGRAM</h3><br >
+        
+                                <div id="indentedCode">
+                                <img src="Images/code/arduino_connection.png" alt="arduino pin connection.png" class="centerImage2 imageSet3">
+                                </div>
+
+                                <br ><br>
+                                <h3>CODE</h3><br >
+
+                                <img src="Images/code/code10.png" alt="picture of code #1" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code11.png" alt="picture of code #2" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code12.png" alt="picture of code #3" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code13.png" alt="picture of code #4" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code14.png" alt="picture of code #5" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code15.png" alt="picture of code #6" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code16.png" alt="picture of code #7" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code17.png" alt="picture of code #8" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code18.png" alt="picture of code #9" class="centerImage2 imageSet3">
+                                <br >
+                                <img src="Images/code/code19.png" alt="picture of code #10" class="centerImage2 imageSet3">
+
+
+                                <br >
+
+                                <div id="closer">
+                                       <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                CLOSE
+                                            </a>
+                                          </h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">SENIOR DESIGN PROJECT - IR ROOM TEMPERATURE MONITOR </a>
+                          </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                        <h3>SUMMARY</h3><br >
+                                        <span>
+                                                <ul>
+                                                        <li>Using the Raspberry Pi as the main microcontroller, 
+                                                            in conjunction with two Arduino Uno’s, this paper proposes 
+                                                            a method to set an accurate and efficient, energy-saving 
+                                                            solution to control the temperature of a room. By acquiring 
+                                                            the parameters of the inside and outside temperature sensors 
+                                                            we can get a series of appropriate control signals to control 
+                                                            the heater ensuring a comfortable in temperature. This proposed 
+                                                            system of ours can greatly reduce energy consumption and ensure 
+                                                            real-time monitoring of the room while giving the end-user the 
+                                                            required room temperature he or she needs.<br >
+                                                            <h4>ROLES:</h4>
+                                                            - Team captain of project<br >
+                                                            - Programmer: 
+                                                            <ul>
+                                                                <li>Modeled with Raspberry Pi Zero in Python in a Linux environment</li>
+                        
+                                                            </ul>
+                                                            <ul>
+                                                                <li>Modeled with Arduino Uno in C/C++ environment</li>
+                                                            </ul>
+                                                            <br >
+                                                        </li>
+                                                </ul>
+                                        </span>
+                                        
+                                        <h3>COMPONENTS</h3><br >
+
+                                        <!-- TABLE 1-->
+                                        <table> 
+                                                <tr>
+                                                <th>MICROCONTROLLER</th>
+                                                </tr> 
+
+                                                <tr>
+                                                <td colspan="1">ARDUINO UNO REV3 A000066</td>
+                                                </tr> 
+                                        </table>
+                                        <!-- TABLE 2-->
+                                        <table> 
+                                                <tr>
+                                                <th>COMPILER</th> <th>LANGUAGE</th>
+                                                </tr> 
+
+                                                <tr>
+                                                <td>ARDUINO v1.6.11</td> <td>C/C++ BASED</td>
+                                                </tr> 
+                                        </table>
+                                        <br ><br>
+                                <h3>SCHEMATIC DIAGRAMS</h3><br >
+                                
+                                <h4>MICROCONTROLLER DESIGNS</h4>
+                                <div id="indentedCode">
+                                <img src="Images/code/tempSensor_schematic_2.jpg" alt="arduino pin connection.png" class="centerImage2 imageSet4">
+                                </div>
+
+                                <h4>WIRELESS SENSOR NETWORK (WSN) DESIGN</h4>
+                                <div id="indentedCode">
+                                <img src="Images/code/wsn_schematic.jpg" alt="arduino pin connection.png" class="centerImage2 imageSet4">
+                                </div>
+
+                                <h4>WIRELESS SENSOR NETWORK (WSN) ALGORITHM</h4>
+                                <div id="indentedCode">
+                                <img src="Images/code/wsn_algorithm.jpg" alt="arduino pin connection.png" class="centerImage2 imageSet4">
+                                </div>
+
+                                <br ><br>
+                                <h3>DATA LOGGING</h3><br >
+
+                                <br >
+                                <span>
+                                    Two microcontrollers will pick up the temperature in the room 
+                                    from two opposing sides and then relay the averaged temperature 
+                                    to the third microcontroller, which will then begin to change 
+                                    the temperature of the room by controlling the heater using 
+                                    Pulse Width Modulation (PWM) modulation to vary the average 
+                                    power, delivered to the device. A PID control voltage will 
+                                    be used to set Pulse Width Modulation.
+                                </span>
+
+
+                                <br >
+
+                                <div id="closer">
+                                       <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                                CLOSE
+                                            </a>
+                                          </h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+<!-- ///////////////////////// -->
+                </div> 
+            </div>
+            <!-- -->
+            
+
+        </div>
+
+    </div>
+
+
+    <!-- /////////////////// [ PHOTOGRAPHY:: BEGIN ] //////////////////// -->
+    <div id="photo">
+
+                <div id="bodyColumn">
+            
+                    <p class="paragraphGreen">PHOTOGRAPHY PORTFOLIO</p>
+                    <p>
+                        <img src="Images/Photos/P6300600-11-2.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P6160158-4.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P6300412_clarendon_2-3.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P1010063_D1.png" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P5260706.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P1010198.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P1010349-2.png" alt="My coding portfolio link" class="portfolioLinks">
+                        <img src="Images/Photos/P1010160_BRANDON.jpg" alt="My coding portfolio link" class="portfolioLinks">
+                     </p> 
+            
+                </div>
+
+    </div>
+
+    <!-- /////////////////// [ ILLUSTRATION:: BEGIN ] //////////////////// -->
+    <div id="illustration">
+
+        <div id="bodyColumn">
+
+            <p class="paragraphGreen">ILLUSTRATIONS PORTFOLIO</p>
+            <p>
+                <img src="Images/Art/dadthemilf_DONEinsta2.png" alt="My coding portfolio link" class="portfolioLinks">
+                <img src="Images/Art/IDSSALS_ sig.jpg" alt="My coding portfolio link" class="portfolioLinks">
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- /////////////////// [ MATH WEBSITE:: BEGIN ] //////////////////// -->
+    <div id="math-website">
+
+            <div id="bodyColumn">
+            
+                    <p class="paragraphGreen" id="mathExtLink">MATH WEBSITE (EXTERNAL LINK)</p>
+                    <p>
+                        <a href="https://ianokam.github.io"><img src="Images/Mathwebsite/site_link.png" alt="My coding portfolio link" id="portfolioLinks2"></a>
+                    </p> 
+                    <p>Math website project</p>
+            
+                </div>
+
+    </div>
+
+</div>
+
+<!-- /////////////////// [ DIVIDER ] ///////////////////////// -->
+    <div id="colorsBar">
+            <div id="colorBar1"></div>
+            <div id="colorBar2"></div>
+            <div id="colorBar3"></div>
+            <div id="colorBar4"></div>
+    </div>
+<!-- /////////////////// [ FOOTER ] ///////////////////////// -->
+        <div id="footer">
+
+                <div>
+                    <a href="#body"><p>TOP ^</p></a>
+                    <p>Created by Bryant Anokam</p>
+                </div>
+    
+        </div>
+
+    <!-- ///      OPENING TABs & Changing dropdown layout when clicking:  JAVASCRIPT   ///  -->
+    <script src="Scripts/layoutJavascript.js"></script>  
+</body>
+</html>

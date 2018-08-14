@@ -1,0 +1,722 @@
+body { 
+        width:100%; 
+        margin:0px;
+     }
+/* --------------------------------- */
+/* --------------------------------- */
+#background {
+    width: 125%;
+    height: 51%;
+    position: absolute;
+    z-index: -2;
+    top:0;
+    left:-25%;
+    }
+/* --------------------------------- */
+#body { 
+        width:85%; 
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: auto; /* seemless bounding to the #head */
+        margin-right: auto;
+        border: 1px solid #c3c3c3;
+        border-radius: 10px 10px 0px 0px;
+        /* box-shadow: 5px 0px 30px #858585; */
+        box-shadow: 5px 0px 40px #242424;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction: row; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: row;
+        } /* GOTTEN FROM w3Schools for flex-direction */
+
+#bodyColumn1 {
+        position: static;
+        z-index: -1;
+        padding: 30px 10px 0px 10px;
+        background-color:#ffffff;  
+        width:25%;
+        font-family:'Andale Mono';
+        
+        border-radius: 10px 0px 0px 0px;
+        }
+#bodyColumn1 > img { 
+        /* width: 90%; */
+        margin-left: 25px;
+        margin-top: 10px;
+        width: 80%;
+        border: 3px solid #012f3e;
+        border-radius: 120px;
+        }
+
+#bodyColumn2 {
+        position: static;
+        z-index: 0;
+        width:75%;
+        padding: 0px 20px 0px 20px;
+        background-color:#e0e3e4;    
+        border-radius: 0px 10px 0px 0px;
+
+        /* background-color: #6e0bca; 
+        color: #ffffff;
+        box-shadow: 0px -10px 70px #370466 inset, 10px 0px 20px #6d6d6d; */
+
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction: row; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: row;
+        } /* GOTTEN FROM w3Schools for flex-direction */
+
+#bodyColumn2 li { display: inline-block;}
+
+#bodyColumn2 .portfolioLinks{        
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    }
+.portfolioLinks{ min-width: 225px;}
+#bodyColumn2 .extPortfolioLinks{        
+    width: 20%;
+    margin: 10px;
+    border-radius: 10px;
+    }
+
+#bodyColumn2a {
+        position: static;
+        z-index: 0;
+        width:75%;
+        padding: 0px 20px 0px 20px;
+        /* background-color:#48a7c7; */
+    }
+#bodyColumn2a #header1{  
+        color:#0b5ef7;
+        font-weight: bold;
+        font-size: 1.8em;
+        
+        font-family:'Andale Mono';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #ffffff;
+        width: 50%;
+        border-radius: 15px;
+    }
+#bodyColumn2a #header2{ 
+        color:#0944b3; 
+        font-weight: bold;
+        font-size: 1.0em;
+        
+        font-family:'Andale Mono';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #ffffff;
+        width: 50%;
+        border-radius: 10px;
+    }
+#bodyColumn2a #headerContent{  
+        font-weight: bold;
+        font-size: 0.8em;
+        
+        font-family:'futura';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        background-color: #c9c7c7;
+        width: 100%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+#bodyColumn2b {
+        font-family:'futura';
+        color: #ffffff;
+        font-size: 0.9em;
+        position: static;
+        z-index: 0;
+        width:25%;
+        padding: 0px 20px 0px 20px;
+        background-color:#098f41;
+        box-shadow: 0px -10px 70px #06632d inset;
+    }
+#bodyColumn2b #header{ 
+    text-decoration: underline;
+    line-height: 2em;
+}
+/* --------------------------------- */
+
+#greenBar {
+    margin: 0px;
+    /* background-color:#098f41; */
+    background-color:#011a0b;
+    box-shadow: 0px -10px 70px #033f1c inset;
+    position: relative;
+    top:-10px;
+    z-index: 2;
+    display: inline-block;
+    padding: 0px 10px 10px 0px;
+    width: 100%;
+    height: 0px;
+    }
+
+#greyBar {
+    margin: 0px;
+    background-color: #c3c3c3; 
+    position: relative;
+    top:-20px;
+    z-index: 2;
+    display: inline-block;
+    padding: 0px 10px 10px 0px;
+    width: 100%;
+    }
+
+#colorsBar { 
+        position: static;
+
+        width: 100%;
+        height: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction: row; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: row;
+    } /* GOTTEN FROM w3Schools for flex-direction */
+#colorsBar div { 
+    margin:auto;  
+    padding: 0px 10px 10px 0px;
+    
+    }
+
+#colorBar1{
+    width: 25%;
+    background-color: #590061; 
+    position: static;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    }
+#colorBar2{
+    width: 25%;
+    background-color: #72007c; 
+    position: static;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    }
+#colorBar3{
+    width: 25%;
+    background-color: #9300a0; 
+    position: static;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    }
+#colorBar4{
+    width: 25%;
+    background-color: #b500c5; 
+    position: static;
+    z-index: 2;
+    display: inline-block;
+    width: 100%;
+    height: 0px;
+    }
+/* --------------------------------- */
+
+#tabs { 
+    width:95%;
+    /* height:33px; */
+    height:39px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
+    border-color: #6e0bca;
+    box-shadow: 0px 5px #c3c3c3, 0px 5px 0.5px #c3c3c3, 0px 9px #d8d8d8; 
+    }
+#tabs li {
+    font-family:'Andale Mono';
+    font-size: 1.0em;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    width: 20%;
+    display: inline-block;
+    color: #ffffff;
+    
+    border-radius: 5px 5px 0px 0px;
+    }
+
+.unactiveTab{background-color: #6e0bca;}
+.unactiveTab:hover{background-color: #780ddbb7; cursor: pointer;}
+.unactiveTab:active {background-color: #9041daee;}
+
+.activeTab{background-color: #231a30; /* #550ddb; */ }
+.activeTab:hover{background-color: #231a30; }
+
+/* --------------------------------- */  
+
+#dropDown { 
+    width:95%;
+    /* height:33px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
+    border-color: #6e0bca;
+    box-shadow: 0px 5px #c3c3c3, 0px 5px 0.5px #c3c3c3, 0px 9px #d8d8d8; 
+    display: none;
+    }
+#dropDown ul{ height:20px;} 
+#dropDown #dropDownTabName{
+    font-family:'Andale Mono';
+    font-size: 1.0em;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    color: #ffffff;
+    
+    border-radius: 5px ;
+    background-color: #6e36bd;
+
+    position: relative;
+    top:-9px;
+    }
+#dropDown p {
+    font-family:'Andale Mono';
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    color: #ffffff;
+
+    position: relative;
+    top:-20px;
+    
+    border-radius: 5px ;
+    background-color: #6e36bd;
+    }
+    #dropDown .unactiveTab{background-color: #6e0bca;}
+    #dropDown .unactiveTab:hover{background-color: #780ddbb7; cursor: pointer;}
+    #dropDown .unactiveTab:active {background-color: #9041daee;}
+    
+    #dropDown .activeTab{background-color: #231a30; /* #550ddb; */ }
+    #dropDown .activeTab:hover{background-color: #231a30; }
+/* --------------------------------- */  
+
+#tabContent{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+#coding { 
+    display: initial;
+}
+#photo { 
+    display: none;
+}
+#illustration { 
+    display: none;
+}
+#math-website { 
+    display: none;
+}
+
+/* --------------------------------- */
+
+#bodyColumn {
+    position: static;
+    z-index: 0;
+    width:100%;
+    padding: 20px;
+    background-color:#e0e3e4; 
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 30px #858585;
+}
+
+#bodyColumn p{ 
+    font-family:'Futura';
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px 10px 20px;
+}
+#bodyColumn li { display: inline-block;}
+.paragraphGreen {
+background-color: #6e0bca;
+color: #ffffff;
+box-shadow: 0px -10px 70px #370466 inset, 2px 35px 20px #6d6d6d;
+border-radius: 5px;
+}
+#bodyColumn .portfolioLinks{        
+width: 40%;
+margin: 10px;
+border-radius: 10px;
+}
+
+#bodyColumn #portfolioLinks2{        
+width: 100%;
+margin: 10px;
+border-width:3px;
+border-style: solid;
+border-color: #000000;
+border-radius: 10px;
+}
+#portfolioLinks2{min-width: 225px;}
+#bodyColumn #portfolioLinks2:hover{        
+    border-color: #0004ff;
+    cursor: pointer;
+}
+
+/* --------------------------------- */ 
+#footer {
+    position: static;
+    z-index: 2;
+    width:100%;
+    font-family:'Andale Mono';
+    padding: 10px 10px 10px 0px;
+    background-color: #5b6164;
+    color: #ffffff;
+    text-align: center;
+    border-width:5px 0px 0px 0px;
+    border-style: solid;
+    border-color: #ababab;
+    
+   }
+
+/* --------------------------------- */ 
+/* --------- MEDIA QUERIES --------- */
+/* (IN ORDER OF THE SCREEN DOWNSIZING) */ 
+
+/* TABS */
+@media only screen and (max-width: 860px) {
+
+    #tabs li {
+        width: 23%;
+       
+        font-size: 0.8em;
+        font-weight: bold;
+        padding-bottom: 14px;
+    }
+
+}
+@media only screen and (max-width: 710px) {
+
+    #tabs li {
+        display: none;
+    }
+    #tabs { 
+        height:0px;
+    }
+    #dropDown { 
+        
+        display: inherit;
+    }
+
+}
+
+/* EXTERNAL LINKS */
+@media only screen and (max-width: 1206px) {
+
+    #bodyColumn2b {
+        font-family:'futura';
+        color: #ffffff;
+        font-size: 1.0em;
+        position: static;
+        z-index: 0;
+        width:25%;
+        padding: 0px 50px 20px 30px;
+        text-align: center;
+        background-color:#098f41;
+        box-shadow: 0px -10px 70px #06632d inset;
+    }
+    #bodyColumn2 .extPortfolioLinks{        
+        width: 40%;
+        margin: 10px;
+        border-radius: 10px;
+        }
+}
+
+
+
+/* BODY */
+@media only screen and (max-width: 982px) {
+    
+    #body { 
+            box-shadow: 5px 0px 40px #242424;
+            display: -webkit-flex; /* Safari */
+            -webkit-flex-direction: column; /* Safari 6.1+ */
+            display: flex;
+            flex-direction: column;
+            } /* GOTTEN FROM w3Schools for flex-direction */
+
+    #bodyColumn1 {
+            width:100%;
+            border-radius: 10px 10px 0px 0px;
+            }
+    #bodyColumn1 > img { 
+        display: none;
+            }
+    #myPic2 {
+        margin-left: 205px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 150px;
+        height:145px;
+        border-radius: 120px;
+        display: inline-block;
+        top:10%;
+
+        border: 3px solid #012f3e;
+ 
+
+    }
+
+    #bodyColumn2 {
+            position: static;
+            z-index: 2;
+            width:100%;
+            padding: 0px 20px 0px 20px;
+            background-color:#e0e3e4;    
+            border-radius: 0px;
+            margin: auto;
+
+            display: -webkit-flex; /* Safari */
+            -webkit-flex-direction:column; /* Safari 6.1+ */
+            display: flex;
+            flex-direction: column;
+            } /* GOTTEN FROM w3Schools for flex-direction */
+
+
+    #bodyColumn2a {
+            width:100%;
+        }
+
+    #bodyColumn2b {
+            font-family:'futura';
+            color: #ffffff;
+            font-size: 0.9em;
+            position: static;
+            z-index: 0;
+            width:100%;
+            padding: 0px 20px 0px 20px;
+            background-color:#098f41;
+            box-shadow: 0px -10px 70px #06632d inset;
+
+            display: -webkit-flex; /* Safari */
+            -webkit-flex-direction:row; /* Safari 6.1+ */
+            display: flex;
+            flex-direction: row;
+        }
+    #bodyColumn2b #header{ 
+        text-decoration: underline;
+        line-height: 2em;
+    }
+    #bodyColumn2 .extPortfolioLinks{        
+        width: 20%;
+        }
+    
+}
+
+/* EXTERNAL LINKS */
+@media only screen and (max-width: 670px) {
+
+    #bodyColumn2 .extPortfolioLinks{        
+        width: 40%;
+        }
+    
+}
+/* MY PIC */
+@media only screen and (min-width: 983px) {
+    
+    #myPic2 {
+        display: none;
+        position: absolute;
+        top:3%;
+        z-index: 5;
+
+        margin-left: 25px;
+        margin-top: 10px;
+        width: 80%;
+        border: 3px solid #012f3e;
+        border-radius: 120px;
+        margin-left: 205px;
+        margin-top: 10px;
+        width: 150px;
+        height:145px;
+        border-radius: 120px;
+    }
+}
+/* PORTFOLIO TITLES + "MATH WEBSITE" + NAME AND TITLE */
+@media only screen and (max-width: 460px) {
+
+    #bodyColumn2a {
+        position: static;
+        z-index: 0;
+        width:100%;
+        padding: 0px 20px 0px 20px;
+        /* background-color:#48a7c7; */
+    }
+#bodyColumn2a #header1{  
+        color:#0b5ef7;
+        font-weight: bold;
+        font-size: 1.3em;
+        
+        font-family:'Andale Mono';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #ffffff;
+        width: 90%;
+        border-radius: 15px;
+    }
+#bodyColumn2a #header2{ 
+        color:#0944b3; 
+        font-weight: bold;
+        font-size: 0.9em;
+        
+        font-family:'Andale Mono';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+
+        background-color: #ffffff;
+        width: 80%;
+        border-radius: 10px;
+    }
+#bodyColumn2a #headerContent{  
+        font-weight: bold;
+        font-size: 0.7em;
+        
+        font-family:'futura';
+        
+        
+        text-align: center;
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
+        background-color: #c9c7c7;
+        width: 100%;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+
+    #bodyColumn p{ 
+        font-family:'Futura';
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
+@media only screen and (max-width: 460px) {
+    .portfolioLinks, #portfolioLinks2{ 
+        position: relative;
+        left:-10%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .portfolioLinks, #portfolioLinks2{ 
+        position: relative;
+        left:-18%;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .portfolioLinks, #portfolioLinks2{ 
+        position: relative;
+        left:-30%;
+    }
+}
+
+/*  EXTERNAL LINKS */
+@media only screen and (max-width: 685px) {
+    #bodyColumn2 .extPortfolioLinks{        
+        width: 33px;
+        height: 33px;
+        }
+    #bodyColumn2b{
+        padding-bottom: 10px;
+        }
+}
+
+@media only screen and (max-width: 495px) {
+    #header {
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+    .extLinksFonts{
+        font-size: 0.8em;
+    }
+
+}
+@media only screen and (max-width: 385px) {
+    #bodyColumn2b {
+        
+        display: -webkit-flex; /* Safari */
+        -webkit-flex-direction:column; /* Safari 6.1+ */
+        display: flex;
+        flex-direction: column;
+        } /* GOTTEN FROM w3Schools for flex-direction */
+
+    }
+
+    #bodyColumn2b p{
+        
+        margin: auto;
+        text-align: left;
+    }
+    #header {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center
+    }
+    .extLinksFonts{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+}
+
+
+
