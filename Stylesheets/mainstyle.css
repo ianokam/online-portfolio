@@ -35,7 +35,7 @@ body {
         padding: 30px 10px 0px 10px;
         background-color:#ffffff;  
         width:25%;
-        font-family:'Andale Mono';
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         border-radius: 10px 0px 0px 0px;
         }
@@ -92,7 +92,7 @@ body {
         font-weight: bold;
         font-size: 1.8em;
         
-        font-family:'Andale Mono';
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         
         text-align: center;
@@ -109,7 +109,7 @@ body {
         font-weight: bold;
         font-size: 1.0em;
         
-        font-family:'Andale Mono';
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         
         text-align: center;
@@ -251,7 +251,7 @@ body {
     box-shadow: 0px 5px #c3c3c3, 0px 5px 0.5px #c3c3c3, 0px 9px #d8d8d8; 
     }
 #tabs li {
-    font-family:'Andale Mono';
+    font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
     font-size: 1.0em;
     text-align: center;
     padding: 10px 20px 10px 20px;
@@ -285,7 +285,7 @@ body {
     }
 #dropDown ul{ height:20px;} 
 #dropDown #dropDownTabName{
-    font-family:'Andale Mono';
+    font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
     font-size: 1.0em;
     text-align: center;
     padding: 10px 20px 10px 20px;
@@ -301,7 +301,7 @@ body {
     top:-9px;
     }
 #dropDown p {
-    font-family:'Andale Mono';
+    font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
     font-size: 1em;
     text-align: center;
     padding: 5px 20px 5px 20px;
@@ -399,7 +399,7 @@ border-radius: 10px;
     position: static;
     z-index: 2;
     width:100%;
-    font-family:'Andale Mono';
+    font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
     padding: 10px 10px 10px 0px;
     background-color: #5b6164;
     color: #ffffff;
@@ -588,7 +588,7 @@ border-radius: 10px;
         font-weight: bold;
         font-size: 1.3em;
         
-        font-family:'Andale Mono';
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         
         text-align: center;
@@ -605,7 +605,7 @@ border-radius: 10px;
         font-weight: bold;
         font-size: 0.9em;
         
-        font-family:'Andale Mono';
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         
         
         text-align: center;
@@ -697,8 +697,6 @@ border-radius: 10px;
         display: flex;
         flex-direction: column;
         } /* GOTTEN FROM w3Schools for flex-direction */
-
-    }
 
     #bodyColumn2b p{
         
