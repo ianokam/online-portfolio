@@ -345,6 +345,10 @@ body {
     display: none;
 }
 
+h4 a {
+    font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
+    font-weight: bold;
+}
 /* --------------------------------- */
 
 #bodyColumn {
