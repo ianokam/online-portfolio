@@ -39,14 +39,6 @@ body {
         
         border-radius: 10px 0px 0px 0px;
         }
-#bodyColumn1 > img { 
-        /* width: 90%; */
-        margin-left: 25px;
-        margin-top: 10px;
-        width: 80%;
-        border: 3px solid #012f3e;
-        border-radius: 120px;
-        }
 
 #bodyColumn2 {
         position: static;
@@ -462,22 +454,6 @@ border-radius: 10px;
             width:100%;
             border-radius: 10px 10px 0px 0px;
             }
-    #bodyColumn1 > img { 
-        display: none;
-            }
-    #myPic2 {
-        margin-left: 205px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        width: 150px;
-        height:145px;
-        border-radius: 120px;
-        display: inline-block;
-        top:10%;
-
-        border: 3px solid #012f3e;
-    }
-
     #bodyColumn2 {
             position: static;
             z-index: 2;
@@ -535,27 +511,7 @@ border-radius: 10px;
         width: 40%;
         }    
 }
-/* MY PIC */
-@media only screen and (min-width: 983px) {
-    
-    #myPic2 {
-        display: none;
-        position: absolute;
-        top:3%;
-        z-index: 5;
 
-        margin-left: 25px;
-        margin-top: 10px;
-        width: 80%;
-        border: 3px solid #012f3e;
-        border-radius: 120px;
-        margin-left: 205px;
-        margin-top: 10px;
-        width: 150px;
-        height:145px;
-        border-radius: 120px;
-    }
-}
 /* PORTFOLIO TITLES + "MATH WEBSITE" + NAME AND TITLE */
 @media only screen and (max-width: 460px) {
 
