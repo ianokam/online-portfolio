@@ -114,8 +114,7 @@ body {
         font-size: 1.0em;
         
         font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
-        
-        
+          
         text-align: center;
         
         margin-left: auto;
@@ -130,7 +129,6 @@ body {
         font-size: 0.8em;
         
         font-family:'futura';
-        
         
         text-align: center;
         
@@ -527,8 +525,7 @@ border-radius: 10px;
     }
     #bodyColumn2 .extPortfolioLinks{        
         width: 20%;
-        }
-    
+        }    
 }
 
 /* EXTERNAL LINKS */
@@ -536,8 +533,7 @@ border-radius: 10px;
 
     #bodyColumn2 .extPortfolioLinks{        
         width: 40%;
-        }
-    
+        }    
 }
 /* MY PIC */
 @media only screen and (min-width: 983px) {
@@ -575,8 +571,7 @@ border-radius: 10px;
         font-weight: bold;
         font-size: 1.3em;
         
-        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
-        
+        font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;  
         
         text-align: center;
         
@@ -593,8 +588,7 @@ border-radius: 10px;
         font-size: 0.9em;
         
         font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
-        
-        
+              
         text-align: center;
         
         margin-left: auto;
@@ -609,8 +603,7 @@ border-radius: 10px;
         font-size: 0.7em;
         
         font-family:'futura';
-        
-        
+             
         text-align: center;
         
         margin-left: auto;
@@ -622,7 +615,6 @@ border-radius: 10px;
         border-radius: 15px;
         padding: 10px;
     }
-
 
     #bodyColumn p{ 
         font-family:'Futura';
