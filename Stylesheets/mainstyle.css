@@ -120,7 +120,7 @@ body {
         font-weight: bold;
         font-size: 0.8em;
         
-        font-family:'futura';
+        font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
         
         text-align: center;
         
@@ -135,7 +135,7 @@ body {
     }
 
 #bodyColumn2b {
-        font-family:'futura';
+        font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
         color: #ffffff;
         font-size: 0.9em;
         position: static;
@@ -356,7 +356,7 @@ h4 a {
 }
 
 #bodyColumn p{ 
-    font-family:'Futura';
+    font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
     font-weight: bold;
     font-size: 1.8em;
     text-align: center;
@@ -480,7 +480,7 @@ border-radius: 10px;
         }
 
     #bodyColumn2b {
-            font-family:'futura';
+            font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
             color: #ffffff;
             font-size: 0.9em;
             position: static;
@@ -558,7 +558,7 @@ border-radius: 10px;
         font-weight: bold;
         font-size: 0.7em;
         
-        font-family:'futura';
+        font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
              
         text-align: center;
         
@@ -573,7 +573,7 @@ border-radius: 10px;
     }
 
     #bodyColumn p{ 
-        font-family:'Futura';
+        font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
         font-weight: bold;
         font-size: 1.1em;
         text-align: center;
@@ -648,8 +648,31 @@ border-radius: 10px;
         margin-right: auto;
         text-align: left;
     }
-
 }
 
+/*FOR BIGGER SCREENS*/
+@media only screen and (min-width: 1230px) {
 
+    
+    #bodyColumn2a #header1 {
+        font-weight: bold;
+            font-size: 2em;
+    }
+    #bodyColumn2a #header2 {
+        font-weight: bold;
+            font-size: 1.5em;
+    }
+    #bodyColumn2a #headerContent {
+        font-weight: bold;
+            font-size: 1.2em;
+    }
+    #bodyColumn2 .extPortfolioLinks{        
+        width: 66px;
+        height: 66px;
+        }
+    #bodyColumn2b{
+        padding-bottom: 5px;
+        }
+
+}
 
