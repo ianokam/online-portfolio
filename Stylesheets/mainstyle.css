@@ -651,20 +651,20 @@ border-radius: 10px;
 }
 
 /*FOR BIGGER SCREENS*/
-@media only screen and (min-width: 1230px) {
+@media only screen and (min-width: 1295px) {
 
     
     #bodyColumn2a #header1 {
         font-weight: bold;
-            font-size: 2em;
+            font-size: 2.5em;
     }
     #bodyColumn2a #header2 {
         font-weight: bold;
             font-size: 1.5em;
     }
     #bodyColumn2a #headerContent {
-        font-weight: bold;
-            font-size: 1.2em;
+        font-weight: 510;
+            font-size: 1.1em;
     }
     #bodyColumn2 .extPortfolioLinks{        
         width: 66px;
