@@ -1,105 +1,151 @@
-//When document is READY resize GREEN BACKGROUND w/ #body Correctly + change Mathwebsite text orientation
-$(document).ready(function() {
+/*---------------------------------------------------------------------*/
+/* ---------- [[[    MENU TOGGLE ON/OFF    ]]] ------------------------*/
+
+$( "button" ).click(function() {
     var win = $(this); //this = window
-    var size=$( "#body" ).height()+20;
-    $("#background").css("height", size + "px");
+    var size=$( "body" ).height();
+    $("#menuBarBlack").css("height", size + "px");
 
-    if($( window ).width() <= 860){
-        $("#mathExtLink").replaceWith( '<p class="paragraphGreen" id="mathExtLink">MATH WEBSITE<br > (EXTERNAL LINK)</p>' );
-    }
-    else if($( window ).width() > 860){
-        $("#mathExtLink").replaceWith( '<p class="paragraphGreen" id="mathExtLink">MATH WEBSITE (EXTERNAL LINK)</p>' );
-    }
-});
-// RESIZE GREEN BACKGROUND w/ #body Correctly  +  change Mathwebsite text orientation  
-$(window).on('resize', function(){
+
+    $( "#menuBarBlack" ).fadeToggle( "slow", "linear" );
+    $( ".pos-f-t" ).fadeToggle( "slow", "linear" );
+  });
+/*------------------------------------------------------*/
+  $( ".fadeToggle" ).click(function() {
     var win = $(this); //this = window
-    var size=$( "#body" ).height()+20;
-    $("#background").css("height", size + "px");
+    var size=$( "body" ).height();
+    $("#menuBarBlack").css("height", size + "px");
 
-    if($( window ).width() <= 865){
-        $("#mathExtLink").replaceWith( '<p class="paragraphGreen" id="mathExtLink">MATH WEBSITE<br > (EXTERNAL LINK)</p>' );
-    }
-    else if($( window ).width() > 865){
-        $("#mathExtLink").replaceWith( '<p class="paragraphGreen" id="mathExtLink">MATH WEBSITE (EXTERNAL LINK)</p>' );
-    }
-});
 
+    $( "#menuBarBlack" ).fadeToggle( "slow", "linear" );
+    $( ".pos-f-t" ).fadeToggle( "slow", "linear" );
+  });
+  
+/*-------------------------------------------------------*/  
 /* ---------- [[[    TABS    ]]] ------------------------*/
+function openHome() {
+    /* --------------CHANGE CSS STYLE----------------- */
+    /*TURN ON/OFF HOME TAB CONTENT/OTHER TAB CONTENT*/
+    $("#tabContent").css("display", "none");
+    $("#tabHome").css("display", "initial");
+
+    /*--------------------------------------*/
+    /*TURN ON/OFF TAB CONTENT*/
+    $("#coding").css("display", "none");
+    $("#photo").css("display", "none");
+    $("#illustration").css("display", "none");
+    $("#math-website").css("display", "none");
+
+    /* --------------CHANGE HTML ATTR----------------- */
+    /*CHANGE TAB ACTIVE/NONACTIVE LOOK*/
+    $("#homeTab").attr("class", "nav-item nav-link  active");
+    $("#codeTab").attr("class", "nav-item nav-link  unactive");
+    $("#photoTab").attr("class", "nav-item nav-link  unactive");
+    $("#illustrationTab").attr("class", "nav-item nav-link  unactive");
+    $("#mathWebsiteTab").attr("class", "nav-item nav-link  unactive");
+    
+    $("#homeTab2").attr("class", "activeTab");
+    $("#codeTab2").attr("class", "unactiveTab");
+    $("#photoTab2").attr("class", "unactiveTab");
+    $("#illustrationTab2").attr("class", "unactiveTab");
+    $("#mathWebsiteTab2").attr("class", "unactiveTab");
+
+}
+
 function openCode() {
     /* --------------CHANGE CSS STYLE----------------- */
+    $("#tabContent").css("display", "initial");
+    $("#tabHome").css("display", "none");
+
+    /*--------------------------------------*/
     $("#coding").css("display", "initial");
     $("#photo").css("display", "none");
     $("#illustration").css("display", "none");
     $("#math-website").css("display", "none");
     /* --------------CHANGE HTML ATTR----------------- */
-    $("#codeTab").attr("class", "activeTab");
-    $("#photoTab").attr("class", "unactiveTab");
-    $("#illustrationTab").attr("class", "unactiveTab");
-    $("#mathWebsiteTab").attr("class", "unactiveTab");
+    $("#homeTab").attr("class", "nav-item nav-link  unactive");
+    $("#codeTab").attr("class", "nav-item nav-link  active");
+    $("#photoTab").attr("class", "nav-item nav-link  unactive");
+    $("#illustrationTab").attr("class", "nav-item nav-link  unactive");
+    $("#mathWebsiteTab").attr("class", "nav-item nav-link  unactive");
     
+    $("#homeTab2").attr("class", "unactiveTab");
     $("#codeTab2").attr("class", "activeTab");
     $("#photoTab2").attr("class", "unactiveTab");
     $("#illustrationTab2").attr("class", "unactiveTab");
     $("#mathWebsiteTab2").attr("class", "unactiveTab");
-    /* ---------------------------------------------- */
-    $("#dropDownTabName").replaceWith( '<li id="dropDownTabName">CODING</li>' );
+
 }
 
 function openPhoto() {
+    $("#tabContent").css("display", "initial");
+    $("#tabHome").css("display", "none");
+
+    /*--------------------------------------*/
     $("#coding").css("display", "none");
     $("#photo").css("display", "initial");
     $("#illustration").css("display", "none");
     $("#math-website").css("display", "none");
     /* ------------------------------------- */
-    $("#codeTab").attr("class", "unactiveTab");
-    $("#photoTab").attr("class", "activeTab");
-    $("#illustrationTab").attr("class", "unactiveTab");
-    $("#mathWebsiteTab").attr("class", "unactiveTab");
+    $("#homeTab").attr("class", "nav-item nav-link  unactive");
+    $("#codeTab").attr("class", "nav-item nav-link  unactive");
+    $("#photoTab").attr("class", "nav-item nav-link  active");
+    $("#illustrationTab").attr("class", "nav-item nav-link  unactive");
+    $("#mathWebsiteTab").attr("class", "nav-item nav-link  unactive");
 
+    $("#homeTab2").attr("class", "unactiveTab");
     $("#codeTab2").attr("class", "unactiveTab");
     $("#photoTab2").attr("class", "activeTab");
     $("#illustrationTab2").attr("class", "unactiveTab");
     $("#mathWebsiteTab2").attr("class", "unactiveTab");
-    /* ------------------------------------- */
-    $("#dropDownTabName").replaceWith( '<li id="dropDownTabName">PHOTOGRAPHY</li>' );
+
 }
 
 function openIllustration() {
+    $("#tabContent").css("display", "initial");
+    $("#tabHome").css("display", "none");
+
+    /*--------------------------------------*/
     $("#coding").css("display", "none");
     $("#photo").css("display", "none");
     $("#illustration").css("display", "initial");
     $("#math-website").css("display", "none");
     /* ------------------------------------- */
-    $("#codeTab").attr("class", "unactiveTab");
-    $("#photoTab").attr("class", "unactiveTab");
-    $("#illustrationTab").attr("class", "activeTab");
-    $("#mathWebsiteTab").attr("class", "unactiveTab");
+    $("#homeTab").attr("class", "nav-item nav-link  unactive");
+    $("#codeTab").attr("class", "nav-item nav-link  unactive");
+    $("#photoTab").attr("class", "nav-item nav-link  unactive");
+    $("#illustrationTab").attr("class", "nav-item nav-link  active");
+    $("#mathWebsiteTab").attr("class", "nav-item nav-link  unactive");
 
+    $("#homeTab2").attr("class", "unactiveTab");
     $("#codeTab2").attr("class", "unactiveTab");
     $("#photoTab2").attr("class", "unactiveTab");
     $("#illustrationTab2").attr("class", "activeTab");
     $("#mathWebsiteTab2").attr("class", "unactiveTab");
-    /* ------------------------------------- */
-    $("#dropDownTabName").replaceWith( '<li id="dropDownTabName">ILLUSTRATIONS</li>' );
+
 }
 
 function openMathWebsite() {
+    $("#tabContent").css("display", "initial");
+    $("#tabHome").css("display", "none");
+
+    /*--------------------------------------*/
     $("#coding").css("display", "none");
     $("#photo").css("display", "none");
     $("#illustration").css("display", "none");
     $("#math-website").css("display", "initial");
     /* ------------------------------------- */
-    $("#codeTab").attr("class", "unactiveTab");
-    $("#photoTab").attr("class", "unactiveTab");
-    $("#illustrationTab").attr("class", "unactiveTab");
-    $("#mathWebsiteTab").attr("class", "activeTab");
+    $("#homeTab").attr("class", "nav-item nav-link  unactive");
+    $("#codeTab").attr("class", "nav-item nav-link  unactive");
+    $("#photoTab").attr("class", "nav-item nav-link  unactive");
+    $("#illustrationTab").attr("class", "nav-item nav-link  unactive");
+    $("#mathWebsiteTab").attr("class", "nav-item nav-link  active");
 
+    $("#homeTab2").attr("class", "unactiveTab");
     $("#codeTab2").attr("class", "unactiveTab");
     $("#photoTab2").attr("class", "unactiveTab");
     $("#illustrationTab2").attr("class", "unactiveTab");
     $("#mathWebsiteTab2").attr("class", "activeTab");
-    /* ------------------------------------- */
-    $("#dropDownTabName").replaceWith( '<li id="dropDownTabName">MATH WEBSITE</li>' );
-}
 
+
+}
