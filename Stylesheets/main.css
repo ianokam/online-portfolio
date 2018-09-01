@@ -37,16 +37,16 @@
 
         border-width:0px 0px 5px 0px;
         border-style: solid;
-        border-color: #0f0f0f;
+        border-color: rgb(15, 15, 15);
         border-radius: 0px 0px 10px 10px;
-        box-shadow: 0px -10px 70px #333333 inset;
-        background-color: #868692;
+        box-shadow: 0px -10px 70px rgb(51, 51, 51) inset;
+        background-color: rgb(134, 134, 146);
         display: none;
         }
 
         #footerAlign {
             margin-top: -5px;
-            box-shadow: 0px -5px 20px #292e2bb7 ;
+            box-shadow: 0px -5px 20px rgba(41, 46, 43, 0.718);
         }
     /* --------------------------------- */  
 
@@ -61,8 +61,8 @@
         
         border-width: 0px 0px 5px 0px;
         border-style: solid;
-        border-color: #6e0bca;
-        box-shadow: 0px 5px #c3c3c3, 0px 5px 0.5px #c3c3c3, 0px 9px #d8d8d8; 
+        border-color: rgb(110, 11, 202);
+        box-shadow: 0px 5px rgb(195, 195, 195), 0px 5px 0.5px rgb(195, 195, 195), 0px 9px rgb(216, 216, 216); 
         
         }
     #dropDown ul{ height:30px; } 
@@ -81,15 +81,15 @@
         position: relative;
         top:-15px;
         
-        border-radius: 5px ;
-        background-color: #6e36bd;
+        border-radius: 5px;
+        background-color: rgb(110, 54, 189);
         }
-    #dropDown .unactiveTab{background-color: #6e0bca;}
-    #dropDown .unactiveTab:hover{background-color: #780ddbb7; cursor: pointer;}
-    #dropDown .unactiveTab:active {background-color: #9041daee;}
+    #dropDown .unactiveTab{background-color: rgb(110, 11, 202);}
+    #dropDown .unactiveTab:hover{background-color: rgba(120, 13, 219, 0.718); cursor: pointer;}
+    #dropDown .unactiveTab:active {background-color: rgba(144, 65, 218, 0.933);}
     
-    #dropDown .activeTab{color:#000000; background-color: #ffffff; }
-    #dropDown .activeTab:hover{color:#000000; background-color: #ffffff; }
+    #dropDown .activeTab{color:#000000; background-color: rgb(255, 255, 255); }
+    #dropDown .activeTab:hover{color:#000000; background-color: rgb(255, 255, 255); }
     
     .button {background-color: rgb(56, 56, 56); border-radius: 20px;}
     /*--------------------------------------------*/
@@ -101,8 +101,8 @@
 
         width:110%;
         height: 100vw;
-        background-color:#00000093;
-        box-shadow: 0px -10px 70px #292e2bb7 inset;
+        background-color:rgba(0, 0, 0, 0.576);
+        box-shadow: 0px -10px 70px rgba(41, 46, 43, 0.718) inset;
         display:none;
         } 
 
@@ -151,41 +151,41 @@
                 font-family: 'Futura', 'Courier New', Courier, monospace;
                 border-width: 0px 0px 10px 0px;
                 border-style: solid;
-                border-color: #ffce00;
+                border-color: rgb(255, 206, 0);
                 padding-left: 20px;
                 padding-right: 50px;
             }
     .nav {border-width: 0px 0px 10px 0px;
         border-style: solid;
-        border-color: #6e0bca;
+        border-color: rgb(110, 11, 202);
         }
     #navBar {
                 position: fixed;
                 z-index: 3;
                 border-width: 0px 0px 10px 0px;
                 border-style: solid;
-                border-color: #bdbdbd;
-                box-shadow: 0px 10px 25px #353535 ;
+                border-color: rgb(189, 189, 189);
+                box-shadow: 0px 10px 25px rgb(53, 53, 53);
                 padding-top: 10px;
                 font-family:'Futura';
                 font-size: 1.3em;
             }
     /*--------------------------------------------*/
     .nav-item{
-                background-color: #6e0bca;
+                background-color: rgb(110, 11, 202);
                 margin-left: 10px;
                 margin-top: 12px;
             }
     .nav-item:hover{
                 color: #ffffff;
-                background-color: #780ddbb7; 
+                background-color: rgba(120, 13, 219, 0.718); 
                 cursor: pointer;
                 border-width: 1px 1px 0px 1px;
                 border-style: solid;
             }
     .nav-item:active {
                 color: #ffffff;
-                background-color: #9041daee;
+                background-color: rgba(144, 65, 218, 0.933);
             }
 
     /* ---------------------------------------------------- */
@@ -202,9 +202,9 @@
             }
     #header1, #header2 {
             font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
-            background-color: #ffffffa1;
+            background-color: rgba(255, 255, 255, 0.631);
             width: 50%;
-            box-shadow: 0px 10px 25px #353535 ;
+            box-shadow: 0px 10px 25px rgb(53, 53, 53);
             }
     #header1, #header2, #headerContent {
             font-weight: bold;
@@ -224,7 +224,7 @@
         }
     #headerContent{ 
             color:#ffffff;
-            background-color: #424242d8; 
+            background-color: rgba(66, 66, 66, 0.847); 
             font-size: 1.5em;
             font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
             line-height: 1.5em;
@@ -233,7 +233,7 @@
             width: 90%;
             border-radius: 15px;
             padding: 20px;
-            box-shadow: 0px 10px 15px #8d8080, 22px -10px 70px #292e2bb7 inset ;
+            box-shadow: 0px 10px 15px rgb(141, 128, 128), 22px -10px 70px rgba(41, 46, 43, 0.718) inset;
         }
 
     /* FIX NAMES (BELOW) */
@@ -270,17 +270,17 @@
     /* FIX NAMES (BELOW) */
     /* --------------------------------- */
 
-    #bodyColumn {
+    .bodyColumn {
         position: static;
         z-index: 0;
         width:100%;
         padding: 20px;
-        background-color:#e0e3e4; 
+        background-color:rgb(224, 227, 228); 
         border-radius: 0px 0px 10px 10px;
-        box-shadow: 0px 10px 30px #858585;
+        box-shadow: 0px 10px 30px rgb(133, 133, 133);
     }
 
-    #bodyColumn p{ 
+    .bodyColumn p{ 
         font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
         font-weight: bold;
         font-size: 1.8em;
@@ -290,31 +290,31 @@
         margin-right: auto;
         padding: 10px 20px 10px 20px;
     }
-    #bodyColumn li { display: inline-block;}
+    .bodyColumn li { display: inline-block;}
     .paragraphPurple {
-    background-color: #6e0bca;
+    background-color: rgb(110, 11, 202);
     color: #ffffff;
-    box-shadow: 0px -10px 70px #370466 inset, 2px 35px 20px #6d6d6d;
+    box-shadow: 0px -10px 70px rgb(55, 4, 102) inset, 2px 35px 20px rgb(109, 109, 109);
     border-radius: 5px;
     }
-    #bodyColumn .portfolioLinks{        
+    .bodyColumn .portfolioLinks{        
     width: 40%;
     margin: 10px;
     border-radius: 10px;
     min-width: 240px;
     }
 
-    #bodyColumn #portfolioLinks2{        
+    .bodyColumn #portfolioLinks2{        
     width: 100%;
     margin: 10px;
     border-width:3px;
     border-style: solid;
-    border-color: #000000;
+    border-color: rgb(0, 0, 0);
     border-radius: 10px;
     }
     #portfolioLinks2{min-width: 225px;}
-    #bodyColumn #portfolioLinks2:hover{        
-        border-color: #0004ff;
+    .bodyColumn #portfolioLinks2:hover{        
+        border-color: rgb(0, 4, 255);
         cursor: pointer;
     }
 
@@ -342,8 +342,8 @@
         width:9%;
         height: 250px;
         padding: 30px 10px 0px 30px;
-        background-color:#d6d6d693;
-        box-shadow: 0px -10px 70px #292e2bb7 inset, 10px 0px 25px #1f1f1f, -10px 0px 25px #1f1f1f ;
+        background-color:rgba(214, 214, 214, 0.576);
+        box-shadow: 0px -10px 70px rgba(41, 46, 43, 0.718) inset, 10px 0px 25px rgb(31, 31, 31), -10px 0px 25px rgb(31, 31, 31);
         border-radius: 0px 0px 10px 10px;
         }
     
@@ -385,7 +385,7 @@
     
     #colorBar1{
         width: 25%;
-        background-color: #590061; 
+        background-color: rgb(89, 0, 97); 
         position: static;
         z-index: 2;
         display: inline-block;
@@ -394,7 +394,7 @@
         }
     #colorBar2{
         width: 25%;
-        background-color: #72007c; 
+        background-color: rgb(114, 0, 124); 
         position: static;
         z-index: 2;
         display: inline-block;
@@ -403,7 +403,7 @@
         }
     #colorBar3{
         width: 25%;
-        background-color: #9300a0; 
+        background-color: rgb(147, 0, 160); 
         position: static;
         z-index: 2;
         display: inline-block;
@@ -412,7 +412,7 @@
         }
     #colorBar4{
         width: 25%;
-        background-color: #b500c5; 
+        background-color: rgb(181, 0, 197); 
         position: static;
         z-index: 2;
         display: inline-block;
@@ -430,13 +430,13 @@
         
         font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
         padding: 10px 10px 10px 0px;
-        background-color: #1f2630;
-        box-shadow: 0px -80px 90px #515558b7 inset;
+        background-color: rgb(31, 38, 48);
+        box-shadow: 0px -80px 90px rgba(81, 85, 88, 0.718) inset;
         color: #ffffff;
         text-align: center;
         border-width:5px 0px 0px 0px;
         border-style: solid;
-        border-color: #ababab;
+        border-color: rgb(171, 171, 171);
                     
         }
 
@@ -556,10 +556,10 @@
             margin: 10px 0px 0px 0px;
             padding: 0px;
 
-            background-color: #ffffff5b;
+            background-color: rgba(255, 255, 255, 0.357);
             border-width: 5px;
             border-style: solid;
-            border-color: #ffffff3d;
+            border-color: rgba(255, 255, 255, 0.239);
             border-radius: 10px;
             }
         .extPortfolioLinks2{        
@@ -631,7 +631,7 @@
 /*Changing image placement*/
 @media only screen and (max-width: 495px) { 
 
-    #bodyColumn p{ 
+    .bodyColumn p{ 
         width: 100%;
     }
 
@@ -652,7 +652,7 @@
 }
 @media only screen and (max-width: 380px) { 
 
-    #bodyColumn p{
+    .bodyColumn p{
         font-size: 1.5em;
         width: 100%;
     }
@@ -660,7 +660,7 @@
 }
 @media only screen and (max-width: 370px) { 
 
-    #bodyColumn p{
+    .bodyColumn p{
         font-size: 1.3em;
         width: 100%;
     }
@@ -668,7 +668,7 @@
 }
 @media only screen and (max-width: 360px) { 
 
-    #bodyColumn p{
+    .bodyColumn p{
         font-size: 1.1em;
         width: 100%;
     }
@@ -712,7 +712,7 @@
 
     #footerAlign {
         margin-top: 70px;
-        box-shadow: 0px -10px 300px #292e2bb7 ;
+        box-shadow: 0px -10px 300px rgba(41, 46, 43, 0.718);
     }
 
     #header1{  
