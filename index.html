@@ -61,6 +61,13 @@
                 </button>
             </nav>
     </div>
+
+    <div id="invisibleVideoOverlay-leftSide">
+        <!--EMPTY DIV-->
+    </div>
+    <div id="invisibleVideoOverlay-rightSide">
+        <!--EMPTY DIV-->
+    </div>
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- + BODY SIDEBAR + -->
     <div id="sideNavBar">
@@ -150,20 +157,13 @@
                                                 </div>
                                                 <div id="collapse1" class="panel-collapse collapse in">
                                                 <div class="panel-body">
-                                                        <h3>SCENARIO</h3><br >
+                                                        <h3>SUMMARY</h3><br >
                                                         <span>
-                                                        With its priceless modern art pieces the Musée d'Orsay Museum in Paris, 
-                                                        France ranks high as a must-go-see venue in the city. The museum has a perimeter 
-                                                        intrusion detection system comprised of high-grade ultrasonic sensor devices to 
-                                                        protect the exhibits in the museum. Each exhibit is fixed with a multitude of 
-                                                        ultrasonic sensors connected to a sensing device, which sense the distance of 
-                                                        visitors in proximity to the exhibits. Each sensing device is connected together 
-                                                        in series by a one-to-many UART hardware connection design. When the ‘Slave’ 
-                                                        devices ultrasonic sensors are tripped an alarm is set off alerting visitors to 
-                                                        back away from the exhibit. As the zone of protection is compromised a signal is 
-                                                        relayed to the ‘master’ device hidden away in a control room. This ‘master’ device 
-                                                        acts as a switch aggregating data from the ‘slave’ devices setting off the cameras 
-                                                        in the vicinity of the affected zone when the alarm is left unchecked for too long.
+                                                            As the MSP432 runs the ultrasonic sensor begins to check if any object is in range of 
+                                                            its sensors. Once an object is 2 to 400 centimeters in range of the sensor it begins 
+                                                            to measure the distance of the object in units of centimeters. Each MSP432 board 
+                                                            transmits the distance of their corresponding ultrasonic sensor to the adjacent board, 
+                                                            which then receives and outputs that given distance onto its serial monitor.
                                                         </span>
                                                         <br ><br>
                                                         <h3>COMPONENTS</h3><br >
@@ -307,13 +307,6 @@
                                                         <img src="Images/code/code03.png" alt="picture of code #3" class="centerImage imageSet1">
                                                         
                                                         <br ><br >
-                                                        <span>
-                                                        As the MSP432 runs the ultrasonic sensor begins to check if any object is in range of 
-                                                        its sensors. Once an object is 2 to 400 centimeters in range of the sensor it begins 
-                                                        to measure the distance of the object in units of centimeters. Each MSP432 board 
-                                                        transmits the distance of their corresponding ultrasonic sensor to the adjacent board, 
-                                                        which then receives and outputs that given distance onto its serial monitor.
-                                                        </span>
 
                                                         <div id="closer">
                                                             <h4 class="panel-title">
@@ -337,19 +330,17 @@
                                                 </div>
                                                 <div id="collapse2" class="panel-collapse collapse in">
                                                         <div class="panel-body">
-                                                            <h3>SCENARIO</h3><br >
+                                                            <h3>SUMMARY</h3><br >
                                                             <span>
-                                                                    The 2017 Toyota Prius Gx has a mode that shows the backup and 
-                                                                    front-side cameras view on the navigation screen when parking. 
-                                                                    When these views are on the navigation screen the driver has the 
-                                                                    ability to set the screen to only show what is being viewed on 
-                                                                    the cameras or to superimpose colored onscreen guide lines onto 
-                                                                    the cameras displayed image to assist in parking.  In the latter 
-                                                                    mode the distance values of objects in front and behind the car 
-                                                                    can be displayed when the driver presses down a button on the steering 
-                                                                    wheel in which the distance sensors on the outside of the car transmits 
-                                                                    its data to the navigation screen. The distance is displayed for 15 
-                                                                    seconds until the driver presses the button again. 
+                                                                As the MSP432 is running the ultrasonic distance sensor begins to check if any 
+                                                                object is in range of its sensors. Once an object is 2 to 400 centimeters in 
+                                                                range of the sensor it begins to pick up the signal. When one person enters a 
+                                                                “T” on their serial monitor and sends it the ultrasonic distance sensors signal 
+                                                                from that person’s board is then sent to the serial monitor of any MSP432 board 
+                                                                that is in wireless distance of the NRF2401+ 2.4GHz wireless RF transceiver module. 
+                                                                Once sent to the other person the module picks up the signal with the distance and 
+                                                                displays the measured distance of the object from the other persons MSP432 onto 
+                                                                their serial monitor. 
                                                             </span>
                                                             <br ><br>
                                                             <h3>COMPONENTS</h3><br >
@@ -562,17 +553,6 @@
                                                             <img src="Images/code/code09.png" alt="picture of code #3" class="centerImage2 imageSet2">
                                                             
                                                             <br ><br >
-                                                            <span>
-                                                                As the MSP432 is running the ultrasonic distance sensor begins to check if any 
-                                                                object is in range of its sensors. Once an object is 2 to 400 centimeters in 
-                                                                range of the sensor it begins to pick up the signal. When one person enters a 
-                                                                “T” on their serial monitor and sends it the ultrasonic distance sensors signal 
-                                                                from that person’s board is then sent to the serial monitor of any MSP432 board 
-                                                                that is in wireless distance of the NRF2401+ 2.4GHz wireless RF transceiver module. 
-                                                                Once sent to the other person the module picks up the signal with the distance and 
-                                                                displays the measured distance of the object from the other persons MSP432 onto 
-                                                                their serial monitor. 
-                                                            </span>
                             
                                                             <div id="closer">
                                                                     <h4 class="panel-title">
