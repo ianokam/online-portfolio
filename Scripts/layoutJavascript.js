@@ -24,7 +24,7 @@ $( "button" ).click(function() {
 
     $("#menuBarBlack").css("height", size + "px");
 
-    $( "#menuBarBlack" ).fadeToggle( "slow", "linear" );
+    $( "#menuBarBlack" ).fadeToggle( "fast", "linear" );
 /*-------------------------------------------------*/    
     // var i = $( ".p-4" ).css( "top" ); /*Comes out as a string. A number + "px".  (i.e. 70px) */
     // var numberCache = parseInt( i.substr(0, i.length-2) ); /*Holds just the number. BUT IT IS A STRING - be mindful!!! */
@@ -67,7 +67,7 @@ $( "button" ).click(function() {
     var size=$( "body" ).height()+30;
     $("#menuBarBlack").css("height", size + "px");
 
-    $( "#menuBarBlack" ).fadeToggle( "slow", "linear" );
+    $( "#menuBarBlack" ).fadeToggle( "fast", "linear" );
 
     /*-------------------------------------------------*/
     $( ".p-4" ).slideToggle( "fast" );
