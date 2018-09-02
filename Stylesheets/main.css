@@ -733,7 +733,7 @@
 @media only screen and (min-height: 790px){ 
 
     #headerContent {
-        margin-bottom: 210px;
+        margin-bottom: 190px;
     }
     /* 
     #header1{  
@@ -743,7 +743,7 @@
         font-size: 1.5em;
     } */
     #headerContent{ 
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
 }
 
