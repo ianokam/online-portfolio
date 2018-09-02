@@ -730,10 +730,10 @@
 
 
 /*Changing font size and Side NavBar dimensions FOR BIGGER SCREENS (bigger than 13-inches)*/
-@media only screen and (min-height: 745px){ 
+@media only screen and (min-height: 655px){ /*745*/
 
     #headerContent {
-        margin-bottom: 150px;
+        margin-bottom: 110px;
     }
     #headerContent{ 
         font-size: 1.4em;
