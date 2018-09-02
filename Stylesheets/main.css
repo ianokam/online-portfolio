@@ -146,9 +146,11 @@
         }
     /* ---------------------------------------------------- */
     /* ---------------   TOP NAVIGATION LAYOUT   ---------- */
-    /* ---------------------------------------------------- */   
+    /* ---------------------------------------------------- */
+    .op-logo, .nav-item{
+        font-family: 'Futura', 'Helvetica', 'Arial', sans-serif;
+    }   
     .op-logo{   margin: 10px;
-                font-family: 'Futura', 'Courier New', Courier, monospace;
                 border-width: 0px 0px 10px 0px;
                 border-style: solid;
                 border-color: rgb(255, 206, 0);
@@ -730,9 +732,8 @@
 /*Changing font size and Side NavBar dimensions FOR BIGGER SCREENS (bigger than 13-inches)*/
 @media only screen and (min-height: 790px){ 
 
-    #footerAlign {
-        margin-top: 110px;
-        box-shadow: 0px -10px 300px rgba(41, 46, 43, 0.718);
+    #headerContent {
+        margin-bottom: 110px;
     }
     /* 
     #header1{  
@@ -746,7 +747,7 @@
     }
 }
 
-@media only screen and (min-width: 1285px){ 
+@media only screen and (min-width: 1290px){ 
 
     .extPortfolioLinks{ 
         position: relative;
@@ -754,5 +755,13 @@
         left:10px;      
         width: 45%;
         }   
+    .bodyColumn {
+        padding-bottom: 150px;
+        }
+    .panel-heading { 
+        margin-top: 55px; 
+        font-size: 1.2em;
+        }
+
 }
     
