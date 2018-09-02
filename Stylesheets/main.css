@@ -759,6 +759,10 @@
         left:10px;      
         width: 45%;
         }   
+
+}
+@media only screen and (min-width: 1290px ), screen and (min-height:745px){ 
+
     .bodyColumn {
         padding-bottom: 150px;
         }
