@@ -742,16 +742,16 @@
         font-size: 1.5em;
     } */
     #headerContent{ 
-        font-size: 1.9em;
+        font-size: 1.6em;
     }
 }
 
-@media only screen and (min-width: 1280px){ 
+@media only screen and (min-width: 1285px){ 
 
-    #sideNavBar {
-        height: 500px;
-        }
-    .extPortfolioLinks{        
+    .extPortfolioLinks{ 
+        position: relative;
+        top:-10px;
+        left:10px;      
         width: 45%;
         }   
 }
