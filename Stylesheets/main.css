@@ -725,4 +725,34 @@
         font-size: 1.3em;
     }
 }
+
+
+/*Changing font size and Side NavBar dimensions FOR BIGGER SCREENS (bigger than 13-inches)*/
+@media only screen and (min-height: 790px){ 
+
+    #footerAlign {
+        margin-top: 110px;
+        box-shadow: 0px -10px 300px rgba(41, 46, 43, 0.718);
+    }
+    /* 
+    #header1{  
+        font-size: 2.3em;
+    }
+    #header2{ 
+        font-size: 1.5em;
+    } */
+    #headerContent{ 
+        font-size: 1.9em;
+    }
+}
+
+@media only screen and (min-width: 1280px){ 
+
+    #sideNavBar {
+        height: 500px;
+        }
+    .extPortfolioLinks{        
+        width: 45%;
+        }   
+}
     
